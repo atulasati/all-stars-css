@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Task</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Logo</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="about.html">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="slide-in">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <div class="cube">
+                        <div class="cube-face front"><p>Hover Me!</p></div>
+                        <div class="cube-face back"></div>
+                        <div class="cube-face left"></div>
+                        <div class="cube-face right"></div>
+                        <div class="cube-face top"></div>
+                        <div class="cube-face bottom"></div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="card-container">
+                        <div class="card-flip">
+                            <div class="card-front">
+                                <h1 class="fontFlip">Front Back</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="slider-container" id="slider-container">
+                        <input type="range" min="0" max="100" value="50" id="color-slider">
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="toggle-container">
+                        <button class="rotate-toggle" id="rotate-toggle">Toggle Me!</button>
+                    </div>
+                </div>
+                <div class="grid-item" >
+                    <div class="button-container">
+                        <button class="scale-button">Hover Me!</button>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="quote-section">
+                        <p>"Success usually comes to those who are too busy to be looking for it."</p>
+                        <span class="author">- Henry David Thoreau</span>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="custom-cursor-section" id="custom-cursor-section">
+                        Hover over me to change the cursor!
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="element">
+                        &#9733;
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="images/facebook.svg" alt="facebook" class="icon" />
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="images/twitter.svg" alt="twitter" class="icon" />
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                    <img src="images/linkedin.svg" alt="linkedin" class="icon" />
+                </a>
+            </div>
+            <div class="footer-content">
+                <p>&copy; 2023 Your Company Name. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const slider = document.getElementById('color-slider');
+        const container = document.getElementById('slider-container');
+        const toggleButton = document.getElementById('rotate-toggle');
+
+        slider.addEventListener('input', () => {
+            const value = slider.value;
+            const colorValue = (255 * value) / 100;
+            container.style.backgroundColor = `rgb(${colorValue}, ${colorValue}, ${colorValue})`;
+        });
+
+        toggleButton.addEventListener('click', () => {
+            toggleButton.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

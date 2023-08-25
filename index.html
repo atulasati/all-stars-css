@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Task</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <div class="logo">Logo</div>
+            <nav>
+                <ul>
+                    <li class="active"><a href="#home">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content Section -->
+        <main class="slide-in">
+            <h1>Welcome to Our Website</h1>
+            <p>I'm thrilled to share that I've seamlessly integrated every specification you recommended for the top
+                page Trial Task <strong> #1.</strong>
+
+            <p> <strong> #2.</strong> If you click on 'About', you'll find that all elements are designed with custom
+                styles; no libraries were used. We could achieve even faster results by utilizing npm packages or
+                plugins. </p>
+
+            <p> Thank you for sharing this challenging task. I'm confident that we'll create the best product in the
+                world.</p>
+            <!-- Image Section -->
+            <div class="image-container">
+                <img src="https://loremflickr.com/cache/resized/65535_52461676408_4442828f69_z_640_360_nofilter.jpg"
+                    alt="Base Image" class="base-image">
+                <img src="https://dummyimage.com/300/09f.png" alt="Clipped Image" class="clipped-image">
+            </div>
+
+            <!-- Hover Button and Popup Section -->
+            <button class="nice-button" id="popButton">Click Me!</button>
+            <div class="popup" id="popup">
+                <div class="scroll-container" id="scrollContainer">
+                    <div class="scroll-content" id="scrollContent">
+                        <!-- List of Interactive Features -->
+                        <h6>Interactive Quizzes or Surveys:</h6>
+                        <p>Create quizzes or surveys on various topics related to your website's niche...</p>
+                        <!-- Other interactive features... -->
+                    </div>
+                </div>
+                <span class="close" onclick="closePopup()">&times;</span>
+            </div>
+        </main>
+
+        <!-- Footer Section -->
+        <footer>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="images/facebook.svg" alt="facebook" class="icon" />
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="images/twitter.svg" alt="twitter" class="icon" />
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                    <img src="images/linkedin.svg" alt="linkedin" class="icon" />
+                </a>
+            </div>
+            <div class="footer-content">
+                <p>&copy; 2023 Your Company Name. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript Section -->
+    <script>
+        document.querySelector('.nice-button').addEventListener('click', function () {
+            document.getElementById('popup').style.display = 'block';
+        });
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+        const button = document.getElementById("popButton");
+        button.addEventListener("click", () => {
+            button.classList.add("pop");
+            setTimeout(() => {
+                button.classList.remove("pop");
+            }, 500);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,255 @@
+/* Grid Styles */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-rows: 15% 91% 11%;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0px;
+    }
+
+    .grid-item {
+        padding: 0;
+    }
+}
+
+.slide-in {
+    overflow-y: auto;
+    max-height: calc(100vh - 70px);
+}
+
+.active a {
+    color: yellow;
+    border-bottom-style: inset;
+}
+
+/* Button Styles */
+.button-container {
+    text-align: center;
+}
+
+.scale-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.scale-button:hover {
+    transform: scale(1.1);
+}
+
+/* Slider Styles */
+.slider-container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    align-items: center;
+    background-color: #999;
+    transition: background-color 0.5s ease;
+}
+
+#color-slider {
+    width: 300px;
+}
+
+/* Toggle Styles */
+.toggle-container {
+    text-align: center;
+}
+
+.rotate-toggle {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    transition: transform 0.4s ease;
+}
+
+.rotate-toggle.active {
+    transform: rotate(180deg);
+}
+
+/* Quote Styles */
+.quote-section {
+    text-align: center;
+    font-style: italic;
+    padding: 20px;
+    position: relative;
+    background-color: #f2f2f2;
+}
+
+.quote-section p {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.quote-section .author {
+    font-size: 18px;
+    display: block;
+    margin-top: 10px;
+}
+
+.quote-section::before,
+.quote-section::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/icon.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.quote-section::before {
+    left: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.quote-section::after {
+    right: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Card Styles */
+.card-container {
+    perspective: 1000px;
+    width: 100%;
+}
+
+.card-flip {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.card-container:hover .card-flip {
+    transform: rotateY(180deg);
+}
+
+.card-container .card-flip .fontFlip:hover {
+    transform: rotateY(180deg);
+}
+
+.card-front {
+    background: #ff9999;
+    color: #f0f0f0;
+}
+
+.custom-cursor-section {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 2px solid #000;
+    cursor: url('../images/icons8-cursor-100.png'), auto;
+}
+
+
+.element {
+    background: #007BFF;
+    color: white;
+    border-radius: 8px;
+    width: 100px;
+    height: 100px;
+    display: grid;
+    place-items: center;
+    font-size: 40px;
+}
+
+.element:hover {
+    transform: scale(0.9) rotateX(180deg);
+    animation: flip-scale-animation 1s forwards;
+    background: #F06292;
+}
+
+@keyframes flip-scale-animation {
+    0% {
+        transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+    }
+
+    50% {
+        transform: scale(0.4) rotate3d(-1, 1, 0, -90deg);
+    }
+
+    100% {
+        transform: scale(1) rotate3d(-1, 1, 0, -180deg);
+    }
+}
+
+/* Cube Styles */
+.cube {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.cube:hover {
+    transform: rotateX(180deg) rotateY(180deg);
+}
+
+.cube-face {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: #007BFF;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.cube-face.front {
+    transform: translateZ(50px);
+    align-items: center;
+    display: grid;
+    color: #f0f0f0;
+}
+
+.cube-face.back {
+    transform: rotateY(180deg) translateZ(50px);
+}
+
+.cube-face.left {
+    transform: rotateY(-90deg) translateZ(50px);
+}
+
+.cube-face.right {
+    transform: rotateY(90deg) translateZ(50px);
+}
+
+.cube-face.top {
+    transform: rotateX(90deg) translateZ(50px);
+}
+
+.cube-face.bottom {
+    transform: rotateX(-90deg) translateZ(50px);
+}
