@@ -1,31 +1,56 @@
-# Project Name:  All Star CSS
+# All Star CSS
 
 A responsive webpage with a dynamic layout, animations, advanced CSS techniques, and optimized for performance.
 
 ## Table of Contents
 
-- [Demo](#demo)
-- [Description](#description)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Usage](#usage)
+### CSS Competence Trial Task #1
 
-## Demo
+Objective: Create a responsive, animated webpage showcasing your mastery in CSS. 
+The task is open-ended to allow you to be creative and display a range of skills.
+- Specifications:
+Layout: Use a CSS grid or flexbox to design a webpage containing a header, main content, and footer.
+Animation: Implement at least one keyframe animation. This could be a button hover effect, content transition, 
+or any other imaginative implementation.
+Responsiveness: Ensure the design is mobile-friendly. Test on multiple screen sizes.
+Advanced Techniques: Incorporate any two of the following - CSS variables, blend modes, clipping, masking or gradients.
+Performance: Optimize for speed and performance. This might include considering rendering times and minimalistic, efficient coding.
 
-Include a link to a live demo where users can interact with your project. If possible, provide links to screenshots or GIFs showcasing different aspects of your project.
+- Submission:
+-- Evaluation Criteria:
+It should look GREAT and function flawlessly on popular mobile devices.
+Compliance with specifications.
+Creativity and aesthetic appeal.
+Code cleanliness and efficiency.
+Performance optimization techniques.
 
-## Description
 
-This project is a web page that demonstrates a dynamic layout using CSS grid or flexbox. It incorporates animations through keyframe animations, ensuring an engaging user experience. The design is fully responsive, adapting to various screen sizes, and it utilizes advanced CSS techniques such as CSS variables and gradients. Additionally, performance has been optimized for faster rendering and minimalistic, efficient coding.
+### CSS Competence Trial Task #2
+- Objective: 
+Create a single-page website focusing on CSS transitions, transforms, and pseudo-elements
+to demonstrate your prowess in intricate detail work and animation. The open-ended nature of this task
+allows for creativity and the demonstration of your unique style.
+Specifications:
+Interactivity: Craft a set of at least three interactive UI elements (e.g., buttons, sliders, toggles)
+that each utilize a different CSS transition or transform when interacted with.
+Pseudo-Elements: Design a section where ::before and ::after pseudo-elements play a crucial role. This can be decorative, functional, or both.
+3D Elements: Implement a component that uses CSS 3D transforms. This could be a card flip, a rotating cube, or any 3D interaction of your choice.
+Custom Cursors: Create at least one custom cursor that changes based on the area of the webpage it's over.
+Visual Feedback: Ensure that interactive elements provide clear visual feedback using CSS techniques.
 
-## Features
+- Submission:
+Provide the link to your hosted project and any source code repositories (e.g., GitHub).
+- Evaluation Criteria:
+    It should look GREAT and function flawlessly on popular mobile devices.
+    Adherence to the outlined specifications.
+    Originality and finesse in design.
+    Code clarity and efficiency.
+    Effective use of CSS transitions and transforms.
 
-List the key features of your project, such as:
-- Dynamic layout with CSS grid or flexbox.
-- Engaging animations using keyframe animations.
-- Full responsiveness across multiple screen sizes.
-- Utilization of advanced CSS techniques like CSS variables and gradients.
-- Optimized for speed and performance.
+## Screens
+![Home](https://github.com/atulasati/all-stars-css/assets/1689504/0bb90bac-ff0c-4c56-b82c-7ab6d0b7220c)
+![About](https://github.com/atulasati/all-stars-css/assets/1689504/beed41c1-4c30-4da5-aa7d-b8529910c854)
+
 
 ## Technologies Used
 
@@ -33,8 +58,10 @@ List the key features of your project, such as:
 - CSS (including CSS Grid or Flexbox)
 - JavaScript, CSS variables.
 
-
 # Example installation commands
-git clone https://github.com/your-username/your-project.git
-cd your-project
+```
+git clone https://github.com/atulasati/all-stars-css.git
+cd all-stars-css
+```
+
 # Start a local development server, e.g., using live-server or another tool.
